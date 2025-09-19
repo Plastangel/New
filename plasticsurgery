@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>AI for Plastic Surgery — Evidence & Implementation Playbook</title>
+  <meta name="description" content="Practical, clinician-focused guide to AI in plastic surgery: what works today, measurable benefits, deployment checklist and vendor suggestions.">
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial; margin:0; color:#0b1220; line-height:1.6; background:#fff; }
+    header { background:#0b63a1; color:#fff; padding:30px 18px; text-align:center; }
+    header h1{ margin:0; font-size:28px; }
+    header p{ margin:6px 0 0; opacity:0.9; }
+    nav { display:flex; gap:12px; justify-content:center; padding:12px; background:#f4f7fb; position:sticky; top:0; z-index:10; border-bottom:1px solid #e6eef8; }
+    nav a{ color:#0b63a1; text-decoration:none; font-weight:600; }
+    .container{ max-width:1000px; margin:28px auto; padding:0 18px; }
+    section { padding:18px 0; border-bottom:1px solid #f0f4f8; }
+    h2 { color:#07263b; margin:0 0 8px; font-size:20px; }
+    ul { margin:8px 0 0 20px; }
+    .muted { color:#547a93; font-size:14px; margin-top:6px; }
+    .svg-divider{ width:100%; height:60px; display:block; margin:14px 0; }
+    .cta { background:#0b63a1; color:#fff; padding:12px 16px; display:inline-block; border-radius:6px; text-decoration:none; font-weight:600; }
+    footer{ text-align:center; padding:18px; color:#6b7787; font-size:14px; }
+    .link { color:#0b63a1; text-decoration:none; }
+    @media (max-width:600px){ header h1{ font-size:20px; } h2{ font-size:18px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>AI for Plastic Surgeons — Evidence & Implementation Playbook</h1>
+    <p>Concise guidance: what works now, what to measure, and how to deploy safely.</p>
+  </header>
+
+  <nav>
+    <a href="#what-works">What Works</a>
+    <a href="#benefits">Benefits</a>
+    <a href="#implement">Implementation</a>
+    <a href="#vendors">Vendors</a>
+    <a href="#resources">Resources</a>
+  </nav>
+
+  <main class="container">
+    <!-- Section: What works -->
+    <section id="what-works">
+      <h2>What works today — practical tools</h2>
+      <ul>
+        <li><strong>3D imaging & simulation</strong> — standardized capture increases consult clarity and conversion. (Example: VECTRA / 3dMD)</li>
+        <li><strong>Intra-op analytics (blood-loss)</strong> — objective, real-time estimations support safer decisions (Triton by Gauss/Stryker).</li>
+        <li><strong>Remote wound triage</strong> — AI-assisted photo triage flags problems early; reduces unnecessary visits (Swift Medical).</li>
+        <li><strong>Administrative automation</strong> — speech-to-text, ambient scribing and scheduling reduce clinician time on admin tasks.</li>
+      </ul>
+      <p class="muted">Learn more: <a class="link" href="https://www.srinjoysaha.com/ai-in-surgery">srinjoysaha.com/ai-in-surgery</a></p>
+
+      <!-- SVG image placeholder -->
+      <svg class="svg-divider" viewBox="0 0 800 60" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect width="800" height="60" fill="#ebf6ff"></rect>
+        <g fill="#0b63a1" opacity="0.12"><circle cx="80" cy="30" r="18"/><rect x="140" y="10" width="220" height="40" rx="8"/><rect x="380" y="10" width="320" height="40" rx="8"/></g>
+      </svg>
+    </section>
+
+    <!-- Section: Benefits -->
+    <section id="benefits">
+      <h2>Clinical benefits — why adopt</h2>
+      <ul>
+        <li>Clearer patient communication — visual simulations align expectations.</li>
+        <li>Earlier detection of complications — better safety and fewer readmissions.</li>
+        <li>Time savings for clinicians — outsourcing documentation and routine triage.</li>
+        <li>Actionable outcomes data — objective metrics to refine technique and quality improvement.</li>
+      </ul>
+      <p class="muted">For scar management resources see: <a class="link" href="https://www.srinjoysaha.com/scar-management">srinjoysaha.com/scar-management</a></p>
+
+      <svg class="svg-divider" viewBox="0 0 800 60" xmlns="http://www.w3.org/2000/svg">
+        <rect width="800" height="60" fill="#fff7ed"></rect>
+        <g fill="#ff7b00" opacity="0.14"><rect x="40" y="12" width="180" height="36" rx="8"/><circle cx="280" cy="30" r="18"/><rect x="340" y="12" width="420" height="36" rx="8"/></g>
+      </svg>
+    </section>
+
+    <!-- Section: Limits & Risks -->
+    <section id="limits">
+      <h2>Limits & risks — what to watch</h2>
+      <ul>
+        <li>Model bias — test locally on your patient population before trusting outputs.</li>
+        <li>Privacy — facial/body imaging needs strict consent and secure storage.</li>
+        <li>Regulation & liability — decision-influencing tools require careful governance.</li>
+        <li>Human factors — maintain manual-skill training and override rules.</li>
+      </ul>
+      <p class="muted">Policy/consent template: <a class="link" href="https://www.srinjoysaha.com/pre-op-guidelines">srinjoysaha.com/pre-op-guidelines</a></p>
+
+      <svg class="svg-divider" viewBox="0 0 800 60" xmlns="http://www.w3.org/2000/svg">
+        <rect width="800" height="60" fill="#f6fffb"></rect>
+        <g fill="#0a9d77" opacity="0.12"><rect x="30" y="14" width="240" height="32" rx="6"/><circle cx="320" cy="30" r="18"/><rect x="380" y="12" width="380" height="36" rx="8"/></g>
+      </svg>
+    </section>
+
+    <!-- Section: Implementation checklist -->
+    <section id="implement">
+      <h2>Implementation checklist — phased playbook</h2>
+      <h3>Phase 0 — Internal prep (0–4 wks)</h3>
+      <ul>
+        <li>Appoint project lead + working group (surgery, nursing, IT, admin).</li>
+        <li>Map workflow: consult → imaging → OR → post-op → billing.</li>
+        <li>Define 3 KPIs (consult conversion, documentation time, unplanned post-op visits).</li>
+      </ul>
+
+      <h3>Phase 1 — Low risk quick wins (4–12 wks)</h3>
+      <ul>
+        <li>Deploy admin/NLP pilot (1–2 clinicians). Measure documentation time at 4 & 12 weeks.</li>
+        <li>Implement remote photo triage pilot (3 months) with clear escalation protocol.</li>
+      </ul>
+
+      <h3>Phase 2 — Consultation & planning (8–16 wks)</h3>
+      <ul>
+        <li>Lease or purchase 3D capture (VECTRA / 3dMD); standardize capture SOPs; add simulation in consults.</li>
+      </ul>
+
+      <h3>Phase 3 — Intra-op pilots (12–24 wks)</h3>
+      <ul>
+        <li>Pilot blood-loss estimation (Triton); require backup procedures and consent.</li>
+        <li>Trial remote proctoring / recording for QA (Proximie).</li>
+      </ul>
+
+      <h3>Phase 4 — Evaluate & scale (24–52 wks)</h3>
+      <ul>
+        <li>Assess KPIs, ROI, renegotiate contracts and scale successful pilots.</li>
+      </ul>
+
+      <p class="muted">Download a printable checklist: <a class="link" href="https://www.srinjoysaha.com/resources/ai-checklist.pdf">srinjoysaha.com/resources/ai-checklist.pdf</a></p>
+    </section>
+
+    <!-- Section: Vendors -->
+    <section id="vendors">
+      <h2>Vendor suggestions — quick shortlist</h2>
+      <ul>
+        <li><strong>3D imaging:</strong> Canfield (VECTRA), 3dMD, Crisalix.</li>
+        <li><strong>Blood-loss monitoring:</strong> Triton (Gauss/Stryker).</li>
+        <li><strong>Wound triage:</strong> Swift Medical.</li>
+        <li><strong>OR connectivity/training:</strong> Proximie.</li>
+        <li><strong>Admin/NLP:</strong> Microsoft / Nuance (Dragon, Copilot).</li>
+      </ul>
+      <p class="muted">Vendor demos & pilot tips: <a class="link" href="https://www.srinjoysaha.com/contact">srinjoysaha.com/contact</a></p>
+    </section>
+
+    <!-- Section: Data governance & KPIs -->
+    <section id="resources">
+      <h2>Data governance & KPI tracking</h2>
+      <ul>
+        <li>Consent: explicit image/data use and de-identification clauses.</li>
+        <li>Encryption & storage: vendor HIPAA-equivalent, region-appropriate residency.</li>
+        <li>Access logs & role-based controls; contractual breach notifications.</li>
+        <li>Track KPIs: documentation time, consult conversion, unplanned visits, OR metrics.</li>
+      </ul>
+      <p class="muted">Full resource pack: <a class="link" href="https://www.srinjoysaha.com/ai-resources">srinjoysaha.com/ai-resources</a></p>
+
+      <div style="margin-top:18px;">
+        <a class="cta" href="https://www.srinjoysaha.com/contact">Request a pilot consultation</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Prepared for clinical teams • Practical guidance for AI adoption in plastic surgery.</p>
+    <p>Resources & contact: <a class="link" href="https://www.srinjoysaha.com">srinjoysaha.com</a></p>
+  </footer>
+</body>
+</html>
